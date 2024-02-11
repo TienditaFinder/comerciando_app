@@ -1,6 +1,5 @@
-import 'dart:ui' show TextStyle, FontWeight, Color;
-
 import 'package:comerciando_app/core/app/constants/app_constants.dart';
+import 'package:flutter/material.dart' show Color, FontWeight, TextStyle;
 
 class AppStyles {
   static TextStyle _baseStyle(double size, FontWeight weight, [Color? color]) {
