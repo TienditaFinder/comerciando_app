@@ -8,7 +8,7 @@ class AppColors {
 
   /// Dark theme colors
   static const Color darkBackground = Color(0xff1e1e1e);
-  static const Color darkPrimary = Color(0xffe0e0e0);
+  static const Color darkPrimary = Color(0xff15191f);
   static const Color darkSecondary = Color(0xffb0b0b0);
 
   /// General

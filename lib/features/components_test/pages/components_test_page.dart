@@ -1,5 +1,6 @@
 import 'package:comerciando_app/core/app/utils/app_screen_sizer.dart';
 import 'package:comerciando_app/core/app/utils/app_styles.dart';
+import 'package:comerciando_app/core/app/widgets/custom_container_widget.dart';
 import 'package:flutter/material.dart';
 
 class ComponentsTestPage extends StatelessWidget {
@@ -13,15 +14,17 @@ class ComponentsTestPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Container(
-            padding: EdgeInsets.symmetric(
-              horizontal: sizer.wp(10),
-              vertical: sizer.hp(20),
-            ),
+          CustomContainerWidget(
+            height: sizer.hp(40),
+            padding: const EdgeInsets.all(32),
             color: Theme.of(context).primaryColor,
+            borderRadius: const BorderRadius.only(
+              topRight: Radius.circular(48),
+              topLeft: Radius.circular(48),
+            ),
             child: Text(
               'Footer',
-              style: AppStyles.w600(14, Colors.white),
+              style: AppStyles.w600(24, Colors.white),
             ),
           ),
         ],
