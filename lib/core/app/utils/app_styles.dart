@@ -1,8 +1,13 @@
+import 'package:comerciando_app/core/app/constants/app_colors.dart';
 import 'package:comerciando_app/core/app/constants/app_constants.dart';
 import 'package:flutter/material.dart' show Color, FontWeight, TextStyle;
 
 class AppStyles {
-  static TextStyle _baseStyle(double size, FontWeight weight, [Color? color]) {
+  static TextStyle _baseStyle(
+    double size,
+    FontWeight weight, [
+    Color? color = AppColors.black,
+  ]) {
     return TextStyle(
       fontSize: size,
       fontWeight: weight,
